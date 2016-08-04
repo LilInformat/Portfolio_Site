@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- Java script -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <title>Richard's Portfolio</title>
 </head>
 <body>
@@ -28,19 +25,19 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
       </div>
       <!--Navigation-->
-      <ul class='nav nav-pills nav_list'>
-      <li class='nav_item' role='presentation'>
-        <a href="#">HOME</a>
-      </li>
-      <li class='nav_item' role='presentation'>
-        <a href="#">ABOUT ME</a>
-      </li>
-      <li class='nav_item' role='presentation'>
-        <a href="#">PORTFOLIO</a>
-      </li>
-      <li class="nav_item" role='presentation'>
-        <a href="#">CONTACT ME</a>
-      </li>
+      <nav class='nav nav-pills nav_list'>
+        <li class='nav_item' role='presentation'>
+          <a href="#">HOME</a>
+        </li>
+        <li class='nav_item' role='presentation'>
+          <a href="#">ABOUT ME</a>
+        </li>
+        <li class='nav_item' role='presentation'>
+          <a href="#">PORTFOLIO</a>
+        </li>
+        <li class="nav_item" role='presentation'>
+          <a href="#">CONTACT ME</a>
+        </nav>
       </ul>
     </div>
   </header>
@@ -51,20 +48,31 @@
       <div class='content row'>
         <div class='col-xs-12 col-sm-3 col-md-3'>
           <div class='content_button' onmouseover="DisplayInformation('#simple_id')" onmouseout="HideInformation('#simple_id')">
-            Simple
+            <p>
+              Simple
+            </p>
             <div id='simple_id' class='content_information'>
-                Life is really simple but we insist on making it complicated. <br />
+              <p>
+                Life is really simple but we insist on making it complicated.
+              </p>
+              <p>
                 -Confucius
+              </p>
             </div>
           </div>
         </div>
         <div class='col-xs-12 col-sm-3 col-md-3'>
           <div class='content_button' onmouseover="DisplayInformation('#creative_id')" onmouseout="HideInformation('#creative_id')">
-            Creative
+            <p>
+              Creative
+            </p>
             <div id='creative_id' class='content_information'>
-              A Creative man is motivated by the desire to achieve and not by the desire to beat others
-              <br />
-              -Ayn Rand
+              <p>
+                A Creative man is motivated by the desire to achieve and not by the desire to beat others
+              </p>
+              <p>
+                -Ayn Rand
+              </p>
             </div>
           </div>
         </div>
@@ -72,19 +80,27 @@
           <div class='content_button' onmouseover="DisplayInformation('#power_id')" onmouseout="HideInformation('#power_id')">
             Power
             <div id='power_id' class='content_information'>
-              Nearly all men can stand adversity, but if you want to test a man's character, give him power.
-              <br />
-              -Abraham Lincoln
+              <p>
+                Nearly all men can stand adversity, but if you want to test a man's character, give him power.
+              </p>
+              <p>
+                -Abraham Lincoln
+              </p>
             </div>
           </div>
         </div>
         <div class='col-xs-12 col-sm-3 col-md-3'>
           <div class='content_button' onmouseover="DisplayInformation('#clean_id')" onmouseout="HideInformation('#clean_id')">
-            Clean
+            <p>
+              Clean
+            </p>
             <div id='clean_id' class='content_information'>
-              Don't call the world dirty because you forgot to clean your glasses.
-              <br />
-              -Aaron Hill
+              <p>
+                Don't call the world dirty because you forgot to clean your glasses.
+              </p>
+              <p>
+                -Aaron Hill
+              </p>
             </div>
           </div>
         </div>
@@ -103,7 +119,7 @@
 
         <!-- For now using placeholder images-->
         <div class="carousel-inner" role="listbox">
-          <div class="item active">
+          <div class="slide active">
             <picture>
               <!--X-Small-->
               <source srcset="Images/still_life-400_xsmall_1x.jpg 1x,
@@ -126,7 +142,7 @@
               src="Images/still_life-400_xsmall_1x.jpg" alt="First slide">
             </picture>
           </div>
-          <div class="item">
+          <div class="slide">
             <picture>
               <!--X-Small-->
               <source srcset="Images/cockatoos-400_xsmall_1x.jpg 1x,
@@ -149,7 +165,7 @@
               src="Images/cockatoos-400_xsmall_1x.jpg" alt="First slide">
             </picture>
           </div>
-          <div class="item">
+          <div class="slide">
             <picture>
               <!--X-Small-->
               <source srcset="Images/horses-400_xsmall_1x.jpg 1x,
@@ -172,7 +188,7 @@
               src="Images/horses-400_xsmall_1x.jpg" alt="First slide">
             </picture>
           </div>
-          <div class="item">
+          <div class="slide">
             <picture>
               <!--X-Small-->
               <source srcset="Images/sfo-400_xsmall_1x.jpg 1x,
@@ -212,15 +228,17 @@
       <div class='row'>
         <div class='col-xs-12'>
           <h2>
-            Summary<br />
+            Summary
           </h2>
-          What inspires me to be an engineer are the stories of my deceased uncle who lived in poverty. He loved to learn and would starve himself to save money to buy himself books. Better yet, he would salvage whatever he can find in junkyards to build his own electronics which he couldn't afford. As a result, I spent a large part of my childhood breaking into electronics just to see the inside of it and then reassembling it.
+          <p>
+            What inspires me to be an engineer are the stories of my deceased uncle who lived in poverty. He loved to learn and would starve himself to save money to buy himself books. Better yet, he would salvage whatever he can find in junkyards to build his own electronics which he couldn't afford. As a result, I spent a large part of my childhood breaking into electronics just to see the inside of it and then reassembling it.
 
-          In 2016, I received my Electrical Engineering degree at the University of Toronto. During my studies, I learned to code in C/C++ as well as C# and WPF in group projects. My fourth year design project is a C# WPF application that determines a person's Big Five personality traits by recording how the person looks on the screen when shown a series of pictures. This application was trained on previous experimental results on student volunteers from campus.
+            In 2016, I received my Electrical Engineering degree at the University of Toronto. During my studies, I learned to code in C/C++ as well as C# and WPF in group projects. My fourth year design project is a C# WPF application that determines a person's Big Five personality traits by recording how the person looks on the screen when shown a series of pictures. This application was trained on previous experimental results on student volunteers from campus.
 
-          I am most experienced in programming with C/C++ having had a internship at AMD where I took part in designing, implementing and testing a feature for AMD crimson. The purpose of this feature was to improve customer experience when playing their favorite games. Additionally, I am familiar with programming in Python as well as developing with HTML, CSS and using Bootstrap.
+            I am most experienced in programming with C/C++ having had a internship at AMD where I took part in designing, implementing and testing a feature for AMD crimson. The purpose of this feature was to improve customer experience when playing their favorite games. Additionally, I am familiar with programming in Python as well as developing with HTML, CSS and using Bootstrap.
 
-          Currently, I am looking for an opportunity to further develop my skills as a programmer. I am interested in companies that operate in all industries and my main concern is the work environment. I'm looking for a place where there are many opportunities for learning, creativity and mentorship.
+            Currently, I am looking for an opportunity to further develop my skills as a programmer. I am interested in companies that operate in all industries and my main concern is the work environment. I'm looking for a place where there are many opportunities for learning, creativity and mentorship.
+          </p>
         </div>
       </div>
     </div>
@@ -237,12 +255,18 @@
               </a>
             </div>
             <div class='col-xs-8'>
-              Copyright &#169; Richard Huang 2016
+              <p>
+                Copyright &#169; Richard Huang 2016
+              </p>
             </div>
         </div>
       </div>
     </footer>
   </main>
+
+  <!-- Java script -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>

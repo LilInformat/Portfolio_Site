@@ -5,13 +5,6 @@ The box-shadow and transition-duration is done as taught in class
 and I don't think they can be fixed.
 */
 
-body,html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
 *{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -19,10 +12,32 @@ body,html {
   box-sizing: border-box;
 }
 
+body,html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: 'Shadows Into Light', cursive;
   font-size: 18px;
   padding-top: 100px;
+}
+
+@media screen and (min-width: 1200px){
+  body{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 550px){
+
+  body{
+    padding-top: 70px;
+  }
 }
 
 a{
@@ -63,6 +78,13 @@ main{
   right: 10px;
 }
 
+@media screen and (max-width: 550px){
+  .header_menu{
+    display: inline-block;
+  }
+}
+
+
 /*
 *
 * Nav
@@ -89,6 +111,31 @@ main{
   min-height: 48px;
   max-height: 49px;
 }
+
+@media screen and (max-width: 550px){
+  .nav_list{
+    z-index: 10;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    -webkit-transform: translate(600px, 0);
+    transform: translate(600px, 0);
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  }
+
+  .nav_list.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav_item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+}
 /*
 *
 * Main Body
@@ -104,6 +151,12 @@ main{
 .content_information{
   display: none;
   font-size: 0.5em;
+}
+
+@media screen and (max-width: 550px){
+  .content_information.show{
+    display: block;
+  }
 }
 
 .content_button{
@@ -122,7 +175,7 @@ main{
 .content_button:hover,
 .content_button.hover{
   background-color: #b22222;
-  color: white;
+  color: #fff;
   padding: 0;
   border: none;
   font-size: 3em;
@@ -142,6 +195,15 @@ main{
 .image_content_container{
   margin-top: 10px;
   background-color: #fff;
+}
+
+@media screen and (max-width: 550px){
+  .image_content_container{
+    margin: 0px;
+    padding:10px;
+    background-color: #800000;
+    border: none;
+  }
 }
 
 .text_content_container{
